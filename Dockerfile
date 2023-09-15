@@ -33,3 +33,6 @@ ENTRYPOINT [ "java", \
    "-Dwebgoat.port=8080", \
    "-Dwebwolf.port=9090", \
    "-jar", "webgoat.jar" ]
+
+LABEL io.mend.image.dockerfile.path=Dockerfile
+LABEL org.opencontainers.image.source=https://github.com/Dima2021/DemoCorp
