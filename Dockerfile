@@ -34,5 +34,6 @@ ENTRYPOINT [ "java", \
    "-Dwebwolf.port=9090", \
    "-jar", "webgoat.jar" ]
 
+# Mend traceability labels
 LABEL io.mend.image.dockerfile.path=Dockerfile
 LABEL org.opencontainers.image.source=https://github.com/Dima2021/DemoCorp
