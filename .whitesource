@@ -11,9 +11,6 @@
     "scanPullRequests": true
   },
   "remediateSettings": {
-    "workflowRules": {
-      "enabled": true
-    },
     "enableRenovate": true,
     "extends": [
       "config:base",
