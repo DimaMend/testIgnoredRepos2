@@ -1,5 +1,5 @@
 {
-  "settingsInheritedFrom": "Dima2021/whitesource-config@master",
+  "settingsInheritedFrom": "DimaMend/whitesource-config@main",
   "scanSettings": {
     "enableReachability": true
   },
@@ -16,20 +16,14 @@
     },
     "enableRenovate": true,
     "extends": [
-    "config:base",
+      "config:base",
       "github>whitesource/merge-confidence:beta",
+      ":semanticCommitsDisabled",
       {
         "groupName": "Mend: high confidence minor and patch dependency updates",
         "matchUpdateTypes": ["minor", "patch"],
         "matchConfidence": ["very high", "high"]
       }
     ]
-  },
-  "imageSettings": {
-    "imageTracing": {
-      "enableImageTracingPR": true,
-      "addDockerfilePath": true,
-      "addRepositoryCoordinates": true
-    }
   }
 }
