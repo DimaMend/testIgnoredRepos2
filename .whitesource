@@ -1,7 +1,7 @@
 {
   "settingsInheritedFrom": "DimaMend/whitesource-config@main",
   "scanSettings": {
-    "enableReachability": true
+    "enableReachability": false
   },
   "checkRunSettings": {
     "strictMode": "warning"
@@ -14,14 +14,10 @@
     "workflowRules": {
       "enabled": true
     },
+    "enableRenovate": true,
     "extends": [
       "config:base",
-      "github>whitesource/merge-confidence:beta",
-      {
-        "groupName": "Mend: high confidence minor and patch dependency updates",
-        "matchUpdateTypes": ["minor", "patch"],
-        "matchConfidence": ["very high", "high"]
-      }
+      "github>whitesource/merge-confidence:beta"
     ]
   }
 }
