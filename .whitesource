@@ -11,7 +11,12 @@
     "scanPullRequests": true
   },
   "remediateSettings": {
+    "workflowRules": {
+      "enabled": true
+    },
+    "enableRenovate": true,
     "extends": [
+      "config:base",
       "github>whitesource/merge-confidence:beta"
     ]
   }
