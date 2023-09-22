@@ -36,4 +36,4 @@ ENTRYPOINT [ "java", \
 
 # Mend traceability labels
 LABEL io.mend.image.dockerfile.path=Dockerfile
-LABEL org.opencontainers.image.source=https://github.com/Dima2021/DemoCorp
+LABEL org.opencontainers.image.source=https://github.com/DimaMend/DemoCorp
